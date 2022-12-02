@@ -45,6 +45,21 @@ namespace StackUsingLinkedList_CSharp
             Console.WriteLine("\nThe popped element is: " + top.info);
             top = top.next; //Make top point to the next node is sequence
         }
+        public void display()
+        {
+            Node tmp;
+            if (empty()) //if stack is empty
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                //Traverse the list from beggining till end
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
+            }
+        }
     }
 
 }
