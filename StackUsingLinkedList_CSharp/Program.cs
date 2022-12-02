@@ -15,7 +15,7 @@ namespace StackUsingLinkedList_CSharp
             info = i;
             next = n;
         }       
-    }
+    } 
 
 
 }
